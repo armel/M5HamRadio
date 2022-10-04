@@ -15,6 +15,10 @@ The M5HamRadio project is a distrib of my stable HamRadio projects on M5Stack. I
 
 All these applications are available for free and for all !
 
+![ICSMeter](https://github.com/armel/M5HamRadio/blob/main/img/ICSMeter.png)
+![ICMultiMeter](https://github.com/armel/M5HamRadio/blob/main/img/ICMultiMeter.png)
+![DXTracker](https://github.com/armel/M5HamRadio/blob/main/img/DXTracker.png)
+
 # Installation
 
 ## Prerequisites
@@ -134,15 +138,17 @@ By default, M5Stack will start on ICSMeter firmware. At startup, you'll see the 
 
 ## Ini Loader
 
-You'll now see the Ini Loader with a blue gauge. You have 3 seconds to use the bottom middle button to select an `.ini` file.
- 
-Select the `.ini` file you would like to load and... enjoy. 
+You'll now see the Ini Loader with a blue gauge. You have 3 seconds to use the bottom middle button to select an `.ini` file. Select the `.ini` file you would like to load and... enjoy.
+
+> The last valid .ini file will be load if no action on buttons.  
 
 # Add more firmwares
 
 Even if you already have 3 firmwares (ICSMeter, ICMultiMeter and DXTracker) after flashing your M5Stack via M5Burner, you can add other firmwares to the root of the micro SD card. 
 
 Maybe it's time to test my last project : ICKeyer !
+
+![ICKeyer](https://github.com/armel/M5HamRadio/blob/main/img/ICKeyer.png)
 
 You find the firmwares of all these projects in this repository, of course for free ! 
 
