@@ -7,32 +7,46 @@
 
 **First of all, many thanks to all my [donors](#donations)🙏🏻** 
 
-The M5HamRadio project is a complete distrib of my HamRadio projects on M5Stack. It include 4 applications :
+The M5HamRadio project is a distrib of my stable HamRadio projects on M5Stack. It include 3 applications :
 
 - ICSMeter (default application)
 - ICMultiMeter
-- ICKeyer
 - DXTracker
 
-All theses applications are available for free. 
+All these applications are available for free and for all !
 
-# Settings
+# Installation
 
 ## Prerequisites
 
-Todo
+You need an M5Stack, a micro SD card and a PC under Windows, Linux or MacOS, with the USB drivers installed and the M5Burner application version 3.0.0 (or higher).
 
-## M5Burner
+## Micro SD card
 
-Todo
+Prepare and format a micro SD card in FAT32. This micro SD card will be used to put your configuration files and to place other firmwares.
 
-## Flashage
+## USB drivers installation
 
-Todo
+Please go to [download page](https://docs.m5stack.com/en/download) to download the USB driver that matches your operating system, and install it.
+
+> Note: Core2 currently has two CP2104/CH9102F A USB chip version, users can install the drivers (CH9102 and CP210x) that are compatible with two ICs at the same time to ensure that the device drivers work normally.
+
+## M5Burner installation
+
+Please go to [download page](https://docs.m5stack.com/en/download) to download the M5Burner (version 3.0.0 or higher) that matches your operating system, and install it.
+
+## Firmware flash
+
+Connect your M5Stack to your PC.
+
+Launch the M5Burner application and select the M5HamRadio firmware for your M5Stack model. Be aware, there is a version for M5Core (Basic, Grey, Fire, etc.) with buttons and a version for M5Core2 (Core2, AWS, etc.) with touch screen. 
+
+Click on the blue Download button. Then click on the red Burn button.
+
 
 ## Settings
 
-Using a plain text editor, you will create a file that should have the `.ini` extension. For example `IC705BT.ini` if you plain to use the ICKeyer with an IC-705 connected by Bluetooth. 
+Using a plain text editor, you will create a file that should have the `.ini` extension. For example `IC705BT.ini` if you plain to use an IC-705, connected by Bluetooth. 
 
 And now, here is what you will put in this `IC705BT.ini` :
 
@@ -54,11 +68,24 @@ wifi_password = YOUR_PASSWORD
 baud_rate = 115200
 proxy_url = http://192.168.1.32
 proxy_port = 1234
+
+; Transverter Config
+[transverter]
+transverter_lo_1 = 116000000
+transverter_lo_2 = 118000000
+transverter_lo_3 = 404000000
+transverter_lo_4 = 406000000
+transverter_lo_5 = 9968000000
+
+; Geolocation Config
+[geolocation]
+latitude = 48.848285
+longitude = 2.2708201
 ```
 
-> This is a similar structure to the `settings.h file you used to set up, but in plain text, using a .ini format.  
+Please, **take the time to adapt the values to your use** (Icom CI-V Address, Wifi SSID and password, and so on). It's important !
 
-If you're using an IC-7300, here is an another example with this `IC7300USB.ini` :
+Here is an another example, if you're using an IC-7300, here is an another example with this `IC7300USB.ini` :
 
 ```
 ; Icom Config
@@ -78,45 +105,64 @@ wifi_password = YOUR_PASSWORD
 baud_rate = 115200
 proxy_url = http://192.168.1.32
 proxy_port = 1234
+
+; Transverter Config
+[transverter]
+transverter_lo_1 = 116000000
+transverter_lo_2 = 118000000
+transverter_lo_3 = 404000000
+transverter_lo_4 = 406000000
+transverter_lo_5 = 9968000000
+
+; Geolocation Config
+[geolocation]
+latitude = 48.848285
+longitude = 2.2708201
 ```
 
 > Important ! Important ! Important ! In USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. 
 
-Last, you will need to copy these files at the root of the micro SD Card. That's all.
+Last, you will need to copy these files at the root of the micro SD card. That's all.
 
 > You are able to put multiple .ini settings files for all your transceivers. I have got 3 of them for my IC-705 in BT mode, my IC-705 in USB mode and my IC-7300 in USB mode. I put them in this repository. 
 
 # Usage
 
-At startup, you'll see the Ini Loader. Select the `.ini` file you would like to load and... enjoy. 
+## Bin Loader
 
-The central button on the keyboard is used to change the mode or to start / stop the transmission of a memory.
+By default, M5Stack will start on ICSMeter firmware. At startup, you'll see the Bin Loader with a green gauge. You have 3 seconds to use the bottom middle button to select another firmware. Pressing the left or right button will bypass this step. 
 
-The other buttons on the keyboard are used to select a memory. A first press for a single tranmission and a second press for a continuous tranmission, with a delay. 
+## Ini Loader
 
-The middle button at the bottom is used to enter the settings menu. Use the left and right buttons to select an option. And use the middle button again to confirm.
+You'll now see the Ini Loader with a blue gauge. You have 3 seconds to use the bottom middle button to select an `.ini` file.
+ 
+Select the `.ini` file you would like to load and... enjoy. 
+
+# Add more firmwares
+
+Even if you already have 3 firmwares (ICSMeter, ICMultiMeter and DXTracker) after flashing your M5Stack via M5Burner, you can add other firmwares to the root of the micro SD card. 
+
+Maybe it's time to test my last project : ICKeyer !
+
+You find the firmwares of all these projects in this repository, of course for free ! 
 
 # Disclaimers 
 
-Because of the systematic plundering of my open source projects by a minority of unscrupulous people, taking advantage of my work to make money, I decided not to open the source code of this project, for the moment.
+Because of the systematic plundering of my open source projects by a minority of unscrupulous people, taking advantage of my work to make money, I decided not to open the source code of these projects, for the moment.
 
 I was insulted, threatened and blacklisted by these same people (resellers, youtubers, etc.). Some of them think they are little judges. And even if I know that the majority is behind me, that's enough 😔 
 
 I believe in Open Source. But I believe too that a small part of the HamRadio community and some resellers are not yet mature enough to understand Open Source.
 
-This being the case, I will make this firmware available for FREE and for ALL, but... 
+This being the case, I will make theses firmwares available for FREE and for ALL, but... 
 
-This firmware is copyright (c) 2022 Armel FAUVEAU, that is to say me F4HWN and covered by the Berne Convention.
+These firmware is copyright (c) 2022 Armel FAUVEAU, that is to say me F4HWN and covered by the Berne Convention.
 
-THIS FIRMWARE IS NOT ALLOWED TO BE SOLD, IN ANY WAY. 
+THESE FIRMWARES ARE NOT ALLOWED TO BE SOLD, IN ANY WAY. 
 
-THIS FIRMWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THIS FIRMWARE OR THE USE OR OTHER DEALINGS IN THIS
-FIRMWARE.
+THESE FIRMWARES ARE PROVIDED "AS THEY ARE", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THESE FIRMWARES OR THE USE OR OTHER DEALINGS IN THESE FIRMWARES.
 
 # Credits
  
