@@ -138,7 +138,7 @@ longitude = 2.2708201
 
 Last, you will need to copy these files at the root of the micro SD card. That's all.
 
-> You are able to put multiple .ini settings files for all your transceivers. I have got 3 of them for my IC-705 in BT mode, my IC-705 in USB mode and my IC-7300 in USB mode. I put them in this repository. 
+> You are able to put multiple .ini settings files for all your transceivers. I have got 3 of them for my IC-705 in BT mode, my IC-705 in USB mode and my IC-7300 in USB mode. I put them in this repository in the `ini` folder. 
 
 # Usage
 
@@ -164,7 +164,7 @@ Maybe it's time to test my last project : ICKeyer !
 |:--:|
 | ICKeyer on M5Stack Core2 |
 
-You find the firmwares of all these projects in this repository, of course for free ! 
+You find the firmwares of all these projects in this repository, in the `firmwares` folder, of course for free ! 
 
 # Disclaimers 
 
