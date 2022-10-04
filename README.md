@@ -124,8 +124,6 @@ latitude = 48.848285
 longitude = 2.2708201
 ```
 
-> Important ! Important ! Important ! In USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. 
-
 Last, you will need to copy these files at the root of the micro SD card. That's all.
 
 > You are able to put multiple .ini settings files for all your transceivers. I have got 3 of them for my IC-705 in BT mode, my IC-705 in USB mode and my IC-7300 in USB mode. I put them in this repository. 
@@ -147,6 +145,9 @@ You'll now see the Ini Loader with a blue gauge. You have 3 seconds to use the b
 Even if you already have 3 firmwares (ICSMeter, ICMultiMeter and DXTracker) after flashing your M5Stack via M5Burner, you can add other firmwares to the root of the micro SD card. 
 
 Maybe it's time to test my last project : ICKeyer !
+
+> Important ! Important ! Important ! If you want to try ICKeyer in USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. 
+
 
 ![ICKeyer](https://github.com/armel/M5HamRadio/blob/main/img/ICKeyer.png)
 
