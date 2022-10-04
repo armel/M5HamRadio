@@ -60,7 +60,7 @@ Launch the M5Burner application and select the M5HamRadio firmware for your M5St
 Click on the blue Download button. Then click on the red Burn button.
 
 
-## Settings
+## ICSMeter, ICMultiMeter and ICKeyer .ini file settings
 
 Using a plain text editor, you will create a file that should have the `.ini` extension. For example `IC705BT.ini` if you plain to use an IC-705, connected by Bluetooth. 
 
@@ -98,7 +98,8 @@ transverter_lo_5 = 9968000000
 latitude = 48.848285
 longitude = 2.2708201
 ```
-
+> Note that, Proxy Config section is ONLY useful if you linked your M5Stack to your Transceiver via USB using ICUSBProxy. If you are using Bluetooth, you do not need to change this section of settings. So leave values as they are, by default. The same goes for the Geolocation Config section which is ONLY useful for DXTracker. But if you fill in this section (and the Wifi Config section) correctly, this `.ini` file will also work for the DXTracker too.
+ 
 Please, **take the time to adapt the values to your use** (Icom CI-V Address, Wifi SSID and password, and so on). It's important !
 
 Here is an another example, if you're using an IC-7300, here is an another example with this `IC7300USB.ini` :
@@ -139,6 +140,27 @@ longitude = 2.2708201
 Last, you will need to copy these files at the root of the micro SD card. That's all.
 
 > You are able to put multiple .ini settings files for all your transceivers. I have got 3 of them for my IC-705 in BT mode, my IC-705 in USB mode and my IC-7300 in USB mode. I put them in this repository in the `ini` folder. 
+
+## DXTracker .ini file settings
+
+Using a plain text editor, you will create a file that should have the `.ini` extension. For example `DXTracker.ini`. 
+
+And now, here is what you will put in this `DXTracker.ini` :
+
+```
+; Wifi Config
+[wifi]
+wifi_ssid = YOUR_SSID
+wifi_password = YOUR_PASSWORD
+
+; Geolocation Config
+[geolocation]
+latitude = 48.848285
+longitude = 2.2708201
+
+```
+
+> If these two sections Wifi Config and Geolocation Config is correctly settings in one of your others `.ini` files for ICSMeter, ICMultiMeter or ICKeyer, this will work too.
 
 # Usage
 
