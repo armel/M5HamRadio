@@ -7,7 +7,7 @@
 
 **First of all, many thanks to all my [donors](#donations)🙏🏻** 
 
-The M5HamRadio project is a distrib of my stable HamRadio projects on M5Stack. It include 3 applications :
+The M5HamRadio project is a compilation, in one huge firmware, of my stable HamRadio projects on M5Stack. It include 3 applications :
 
 - ICSMeter (default application)
 - ICMultiMeter
