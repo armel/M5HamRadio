@@ -35,7 +35,7 @@ All these applications are available for free and for all !
 
 ## Prerequisites
 
-You need an M5Stack, a micro SD card and a PC under Windows, Linux or MacOS, with the USB drivers installed and the M5Burner application version 3.0.0 (or higher).
+You need an M5Stack (with 16MB Flash Memory), a micro SD card and a PC under Windows, Linux or MacOS, with the USB drivers installed and the M5Burner application version 3.0.0 (or higher).
 
 ## Micro SD card
 
