@@ -160,7 +160,7 @@ longitude = 2.2708201
 
 ```
 
-> If these two sections Wifi Config and Geolocation Config is correctly settings in one of your others `.ini` files for ICSMeter, ICMultiMeter or ICKeyer, this will work too.
+> If these two sections Wifi Config and Geolocation Config are correctly settings in one of your others `.ini` files for ICSMeter, ICMultiMeter or ICKeyer, this will work too.
 
 # Usage
 
