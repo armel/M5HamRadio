@@ -148,7 +148,6 @@ Maybe it's time to test my last project : ICKeyer !
 
 > Important ! Important ! Important ! If you want to try ICKeyer in USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. 
 
-
 ![ICKeyer](https://github.com/armel/M5HamRadio/blob/main/img/ICKeyer.png)
 
 You find the firmwares of all these projects in this repository, of course for free ! 
