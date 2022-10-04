@@ -15,9 +15,21 @@ The M5HamRadio project is a distrib of my stable HamRadio projects on M5Stack. I
 
 All these applications are available for free and for all !
 
-![ICSMeter](https://github.com/armel/M5HamRadio/blob/main/img/ICSMeter.png)
-![ICMultiMeter](https://github.com/armel/M5HamRadio/blob/main/img/ICMultiMeter.png)
-![DXTracker](https://github.com/armel/M5HamRadio/blob/main/img/DXTracker.png)
+**Big (r)evolution, you don't have to install the whole compilation chain, VSCode & Plateform.io. You don't need to be a developer or a command line expert anymore. I tried to make it as simple as possible.**
+
+
+|![ICSMeter](https://github.com/armel/M5HamRadio/blob/main/img/ICSMeter.png)|
+|:--:|
+| ICSMeter |
+
+|![ICMultiMeter](https://github.com/armel/M5HamRadio/blob/main/img/ICMultiMeter.png)|
+|:--:|
+| ICMultiMeter |
+
+|![DXTracker](https://github.com/armel/M5HamRadio/blob/main/img/DXTracker.png)|
+|:--:|
+| DXTracker |
+
 
 # Installation
 
@@ -148,7 +160,9 @@ Maybe it's time to test my last project : ICKeyer !
 
 > Important ! Important ! Important ! If you want to try ICKeyer in USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. 
 
-![ICKeyer](https://github.com/armel/M5HamRadio/blob/main/img/ICKeyer.png)
+|![ICKeyer](https://github.com/armel/M5HamRadio/blob/main/img/ICKeyer.png)|
+|:--:|
+| ICKeyer |
 
 You find the firmwares of all these projects in this repository, of course for free ! 
 
