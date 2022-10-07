@@ -102,7 +102,7 @@ longitude = 2.2708201
  
 Please, **take the time to adapt the values to your use** (Icom CI-V Address, Wifi SSID and password, and so on). It's important !
 
-Here is an another example, if you're using an IC-7300, here is an another example with this `IC7300USB.ini` :
+Here is an another example, if you're using an IC-7300, with this `IC7300USB.ini` :
 
 ```
 ; Icom Config
@@ -164,13 +164,15 @@ longitude = 2.2708201
 
 # Usage
 
+Ready to go? Your M5Stack has been flashed with M5Burner? Your micro SD card has been formatted and you have saved your modified `.ini` files with your settings? Good. So let's go.
+
 ## Bin Loader
 
 By default, M5Stack will start on ICSMeter firmware. At startup, you'll see the Bin Loader with a green gauge. You have 3 seconds to use the bottom middle button to select another firmware. Pressing the left or right button will bypass this step. 
 
 ## Ini Loader
 
-You'll now see the Ini Loader with a blue gauge. You have 3 seconds to use the bottom middle button to select an `.ini` file. Select the `.ini` file you would like to load and... enjoy.
+If the micro SD card is correctly inserted in your M5Stack, you'll now see the Ini Loader with a blue gauge. You have 3 seconds to use the bottom middle button to select an `.ini` file that you put on it. Select the `.ini` file you would like to load and... enjoy.
 
 > The last valid .ini file will be load if no action on buttons.  
 
