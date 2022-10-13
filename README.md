@@ -214,7 +214,7 @@ Select the COM port to which your M5Stack is connected and click on Connect.
 
 Restart your M5Stack, copy the log trace that appears in the console and send it to me. It may be useful to understand your problem.
 
-|![Step 3](https://github.com/armel/M5HamRadio/blob/main/img/Debug_01.png)|
+|![Step 3](https://github.com/armel/M5HamRadio/blob/main/img/Debug_03.png)|
 |:--:|
 | Step 3 |
 
