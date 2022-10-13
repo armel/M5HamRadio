@@ -194,6 +194,30 @@ Maybe it's time to test my last project : ICKeyer !
 
 You find the firmwares of all these projects in this repository, in the `firmwares` folder, of course for free ! 
 
+# Help me to debug your problem
+
+Do you have a problem? Okay, don't panic. 
+
+Connect your M5Stack to your PC.
+
+Launch the M5Burner application and select the Serial Monitor menu option.
+
+|![Step 1](https://github.com/armel/M5HamRadio/blob/main/img/Debug_01.png)|
+|:--:|
+| Step 1 |
+
+Select the COM port to which your M5Stack is connected and click on Connect.
+
+|![Step 2](https://github.com/armel/M5HamRadio/blob/main/img/Debug_02.png)|
+|:--:|
+| Step 2 |
+
+Restart your M5Stack, copy the log trace that appears in the console and send it to me. It may be useful to understand your problem.
+
+|![Step 3](https://github.com/armel/M5HamRadio/blob/main/img/Debug_01.png)|
+|:--:|
+| Step 3 |
+
 # Disclaimers 
 
 Because of the systematic plundering of my open source projects by a minority of unscrupulous people, taking advantage of my work to make money, I decided not to open the source code of these projects, for the moment.
