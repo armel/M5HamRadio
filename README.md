@@ -68,7 +68,7 @@ Click on the blue Download button. Then click on the red Burn button.
 
 Using a plain text editor, you will create a file that should have the `.ini` extension. For example `IC705BT.ini` if you plain to use an IC-705, connected by Bluetooth. 
 
-And now, here is what you will put in this `IC705BT.ini` :
+And now, here is what you will put in this `IC705BT.ini`. Of course, **take the time to adapt the values to your use** :
 
 ```
 ; Icom Config
@@ -102,9 +102,13 @@ transverter_lo_5 = 9968000000
 latitude = 48.848285
 longitude = 2.2708201
 ```
+
+> About Icom Config section, here are some explanations. About `icom_model` choose between 705, 7300 or 9700. About `icom_address`, this is your Icom CI-V Address. About `icom_connect` choose between BT or USB (if you choose USB, you will need ICUSBProxy). Last, about `icom_device`, this is the BT Address of your 705 (from your transceiver, enter Menu and go to Set > Bluetooth Set > Bluetooth Device Information).
+
+
 > Note that, Proxy Config section is ONLY useful if you linked your M5Stack to your Transceiver via USB using ICUSBProxy. If you are using Bluetooth, you do not need to change this section of settings. So leave values as they are, by default. The same goes for the Geolocation Config section which is ONLY useful for DXTracker. But if you fill in this section (and the Wifi Config section) correctly, this `.ini` file will also work for the DXTracker too.
  
-Please, **take the time to adapt the values to your use** (Icom CI-V Address, Wifi SSID and password, and so on). It's important !
+Please, again, **take the time to adapt the values to your use**. It's important !
 
 Here is an another example, if you're using an IC-7300, with this `IC7300USB.ini` :
 
@@ -178,7 +182,9 @@ By default, M5Stack will start on ICSMeter firmware. At startup, you'll see the 
 
 If the micro SD card is correctly inserted in your M5Stack, you'll now see the Ini Loader with a blue gauge. You have 3 seconds to use the bottom middle button to select an `.ini` file that you put on it. Select the `.ini` file you would like to load and... enjoy.
 
-> The last valid .ini file will be load if no action on buttons.  
+> When you select an .ini file with the Ini Loader (and if it is valid), a copy is made on the Flash memory of the M5Stack. And if at the next reboot you do not make any action / selection of .ini file with the Ini Loader, it is this last valie `.ini` file, in Flash memory, that will be read automatically. This way, you can remove the SD card from your M5Stack, if you wish.
+
+> So, if you change something in your .ini file (for example, the Wifi password, etc.), **you must restart your M5Stack and select it again from the Ini Loader to force reload this new version**. A new copy will then be made in the M5Stack Flash memory. And it will be this new version that will be read at the next reboot (if no action / selection with the Ini Loader).
 
 # Add more firmwares
 
