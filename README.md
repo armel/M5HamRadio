@@ -182,7 +182,7 @@ By default, M5Stack will start on ICSMeter firmware. At startup, you'll see the 
 
 If the micro SD card is correctly inserted in your M5Stack, you'll now see the Ini Loader with a blue gauge. You have 3 seconds to use the bottom middle button to select an `.ini` file that you put on it. Select the `.ini` file you would like to load and... enjoy.
 
-> When you select an .ini file with the Ini Loader (and if it is valid), a copy is made on the Flash memory of the M5Stack. And if at the next reboot you do not make any action / selection of .ini file with the Ini Loader, it is this last valie `.ini` file, in Flash memory, that will be read automatically. This way, you can remove the SD card from your M5Stack, if you wish.
+> When you select an .ini file with the Ini Loader (and if it is valid), a copy is made on the Flash memory of the M5Stack. And if at the next reboot you do not make any action / selection of .ini file with the Ini Loader, it is this last valid `.ini` file, in Flash memory, that will be read automatically. This way, you can remove the SD card from your M5Stack, if you wish.
 
 > So, if you change something in your .ini file (for example, the Wifi password, etc.), **you must restart your M5Stack and select it again from the Ini Loader to force reload this new version**. A new copy will then be made in the M5Stack Flash memory. And it will be this new version that will be read at the next reboot (if no action / selection with the Ini Loader).
 
