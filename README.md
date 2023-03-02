@@ -192,7 +192,9 @@ Even if you already have 3 firmwares (ICSMeter, ICMultiMeter and DXTracker) afte
 
 Maybe it's time to test my last project : ICKeyer !
 
-> Important ! Important ! Important ! If you want to try ICKeyer in USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. Note that ICKeyer works now on M5Stack Core and Core2 ! 
+> **Important ! Important ! Important !** If you want to try ICKeyer in USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. Note that ICKeyer works now on M5Stack Core and Core2 ! 
+
+> **Important ! Important ! Important !** Because applications now use LittleFS and not SPIFFS, if you have old firmwares based on SPIFFS, consider replacing it with the latest versions using LittleFS. If you don't, after loading an old firmware using SPIFFS, it will reformat your flash memory and overwrite any firmware you already have. So, be aware.
 
 |![ICKeyer](https://github.com/armel/M5HamRadio/blob/main/img/ICKeyer.png)|
 |:--:|
