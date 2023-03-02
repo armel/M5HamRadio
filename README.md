@@ -192,11 +192,11 @@ Even if you already have 3 firmwares (ICSMeter, ICMultiMeter and DXTracker) afte
 
 Maybe it's time to test my last project : ICKeyer !
 
-> Important ! Important ! Important ! If you want to try ICKeyer in USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. Note that ICKeyer only works on M5Stack with touch screen (Core2, AWS, etc.). 
+> Important ! Important ! Important ! If you want to try ICKeyer in USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. Note that ICKeyer works now on M5Stack Core and Core2 ! 
 
 |![ICKeyer](https://github.com/armel/M5HamRadio/blob/main/img/ICKeyer.png)|
 |:--:|
-| ICKeyer on M5Stack Core2 |
+| ICKeyer |
 
 You find the firmwares of all these projects in this repository, in the `firmwares` folder, of course for free ! 
 
