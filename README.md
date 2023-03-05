@@ -63,6 +63,15 @@ Click on the blue Download button. Then click on the red Burn button.
 |:--:|
 | M5Burner |
 
+## About TX settings (for USB usage via ICUSBProxy)
+
+Here is a part of my transceiver settings, on IC-7300 :
+
+```
+Set > Connectors > CI-V > CI-V USB Port       Unlink from [REMOTE]
+Set > Connectors > CI-V > CI-V USB Baud Rate  115200
+Set > Connectors > CI-V > CI-V USB Echo Back  OFF
+```
 
 ## ICSMeter, ICMultiMeter and ICKeyer .ini file settings
 
