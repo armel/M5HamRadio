@@ -235,6 +235,24 @@ Restart your M5Stack, copy the log trace that appears in the console and send it
 |:--:|
 | Step 3 |
 
+# Power users only (esptool and CLI)
+
+## Backup full image : *read_flash*
+
+Using ``esptool``, enter this command :
+
+``esptool.py --port /dev/tty.usbserial-02041F5C --baud 230400 read_flash 0x00000 0x1000000 flash_16M.bin``
+
+Replace port and baud rate by yours.
+
+## Restore full image : *write_flash*
+
+Using ``esptool``, enter this command :
+
+``esptool.py --port /dev/tty.usbserial-02041F5C --baud 921600 write_flash --flash_freq keep 0x000000 flash_16M.bin``
+
+Replace port and baud rate by yours.
+
 # Disclaimers 
 
 Because of the systematic plundering of my open source projects by a minority of unscrupulous people, taking advantage of my work to make money, I decided not to open the source code of these projects, for the moment.
