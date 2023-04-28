@@ -53,6 +53,11 @@ You need an M5Stack (with 16MB Flash Memory), a micro SD card and a PC under Win
 
 There is a nice [video](https://www.youtube.com/watch?v=8zPQypwEP4w&ab_channel=K6UDA), made by Bob K6UDA, about my projects. I encourage you to watch it. It may help you understand how to set up your M5Stack with my HamRadio project. Thanks a lot Bob.
 
+|![K6UDA video](https://github.com/armel/M5HamRadio/blob/main/img/K6UDA.jpg)|
+|:--:|
+| [Bob's K6UDA video on his Youtube channel](https://www.youtube.com/watch?v=8zPQypwEP4w&ab_channel=K6UDA) |
+
+
 ## Micro SD card
 
 Prepare and format a micro SD card in FAT32. This micro SD card will be used to put your configuration files and to place other firmwares.
