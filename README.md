@@ -11,7 +11,7 @@ The M5HamRadio project is a compilation, in one huge firmware, of my stable HamR
 
 - ICSMeter (default application)
 - ICMultiMeter
-- DXTracker
+- ICKeyer
 
 All these applications are available for free and for all !
 
@@ -26,16 +26,32 @@ All these applications are available for free and for all !
 |:--:|
 | ICMultiMeter |
 
+|![ICKeyer](https://github.com/armel/M5HamRadio/blob/main/img/ICKeyer.png)|
+|:--:|
+| ICKeyer |
+
+
+# Add more firmwares
+
+Even if you already have 3 firmwares (ICSMeter, ICMultiMeter and ICKeyer) after flashing your M5Stack via M5Burner, you can add other firmwares to the root of the micro SD card. 
+
+Maybe it's time to test my other project : DXTracker !
+
+> **Important ! Important ! Important !** Because applications now use LittleFS and not SPIFFS, if you have old firmwares based on SPIFFS, consider replacing it with the latest versions using LittleFS. If you don't, after loading an old firmware using SPIFFS, it will reformat your flash memory and overwrite any firmware you already have. So, be aware.
+
 |![DXTracker](https://github.com/armel/M5HamRadio/blob/main/img/DXTracker.png)|
 |:--:|
 | DXTracker |
 
+You find the firmwares of all these projects in this repository, in the `firmwares` folder, of course for free ! 
 
 # Installation
 
 ## Prerequisites
 
 You need an M5Stack (with 16MB Flash Memory), a micro SD card and a PC under Windows, Linux or MacOS, with the USB drivers installed and the M5Burner application version 3.0.0 (or higher).
+
+There is a nice [video](https://www.youtube.com/watch?v=8zPQypwEP4w&ab_channel=K6UDA), made by Bob K6UDA, about my projects. I encourage you to watch it. It may help you understand how to set up your M5Stack with my HamRadio project. Thanks a lot Bob.
 
 ## Micro SD card
 
@@ -194,22 +210,6 @@ If the micro SD card is correctly inserted in your M5Stack, you'll now see the I
 > When you select an .ini file with the Ini Loader (and if it is valid), a copy is made on the Flash memory of the M5Stack. And if at the next reboot you do not make any action / selection of .ini file with the Ini Loader, it is this last valid `.ini` file, in Flash memory, that will be read automatically. This way, you can remove the SD card from your M5Stack, if you wish.
 
 > So, if you change something in your .ini file (for example, the Wifi password, etc.), **you must restart your M5Stack and select it again from the Ini Loader to force reload this new version**. A new copy will then be made in the M5Stack Flash memory. And it will be this new version that will be read at the next reboot (if no action / selection with the Ini Loader).
-
-# Add more firmwares
-
-Even if you already have 3 firmwares (ICSMeter, ICMultiMeter and DXTracker) after flashing your M5Stack via M5Burner, you can add other firmwares to the root of the micro SD card. 
-
-Maybe it's time to test my last project : ICKeyer !
-
-> **Important ! Important ! Important !** If you want to try ICKeyer in USB mode, you need to use the [ICUSBProxy](https://github.com/armel/ICUSBProxy) version 0.0.6 or upper. Note that ICKeyer works now on M5Stack Core and Core2 ! 
-
-> **Important ! Important ! Important !** Because applications now use LittleFS and not SPIFFS, if you have old firmwares based on SPIFFS, consider replacing it with the latest versions using LittleFS. If you don't, after loading an old firmware using SPIFFS, it will reformat your flash memory and overwrite any firmware you already have. So, be aware.
-
-|![ICKeyer](https://github.com/armel/M5HamRadio/blob/main/img/ICKeyer.png)|
-|:--:|
-| ICKeyer |
-
-You find the firmwares of all these projects in this repository, in the `firmwares` folder, of course for free ! 
 
 # Help me to debug your problem
 
