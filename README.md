@@ -13,7 +13,7 @@ The M5HamRadio project is a compilation, in one huge firmware, of my stable HamR
 - ICMultiMeter
 - ICKeyer
 
-All these applications are available for free and for all !
+All these applications work on IC-705, IC-7300 and IC-9700 and are available for FREE and for ALL !
 
 **Big (r)evolution, you don't have to install the whole compilation chain, VSCode & Plateform.io. You don't need to be a developer or a command line expert anymore. I tried to make it as simple as possible.**
 
