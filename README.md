@@ -55,7 +55,7 @@ There is a nice [video](https://www.youtube.com/watch?v=8zPQypwEP4w&ab_channel=K
 
 |![K6UDA video](https://github.com/armel/M5HamRadio/blob/main/img/K6UDA.jpg)|
 |:--:|
-| K6UDA video |
+| [Bob's K6UDA video on his Youtube channel](https://www.youtube.com/watch?v=8zPQypwEP4w&ab_channel=K6UDA) |
 
 
 ## Micro SD card
