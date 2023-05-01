@@ -7,11 +7,12 @@
 
 **First of all, many thanks to all my [donors](#donations)🙏🏻** 
 
-The M5HamRadio project is a compilation, in one huge firmware, of my stable HamRadio projects on M5Stack. It include 3 applications :
+The M5HamRadio project is a compilation, in one huge firmware, of my stable HamRadio projects on M5Stack. It include 4 applications :
 
 - ICSMeter (default application)
 - ICMultiMeter
 - ICKeyer
+- DXTracker
 
 All these applications work on IC-705, IC-7300 and IC-9700 and are available for FREE and for ALL !
 
@@ -30,20 +31,15 @@ All these applications work on IC-705, IC-7300 and IC-9700 and are available for
 |:--:|
 | ICKeyer |
 
-
-# Add more firmwares
-
-Even if you already have 3 firmwares (ICSMeter, ICMultiMeter and ICKeyer) after flashing your M5Stack via M5Burner, you can add other firmwares to the root of the micro SD card. 
-
-Maybe it's time to test my other project : DXTracker !
-
-> **Important ! Important ! Important !** Because applications now use LittleFS and not SPIFFS, if you have old firmwares based on SPIFFS, consider replacing it with the latest versions using LittleFS. If you don't, after loading an old firmware using SPIFFS, it will reformat your flash memory and overwrite any firmware you already have. So, be aware.
-
 |![DXTracker](https://github.com/armel/M5HamRadio/blob/main/img/DXTracker.png)|
 |:--:|
 | DXTracker |
 
-You find the firmwares of all these projects in this repository, in the `firmwares` folder, of course for free ! 
+# Add more firmwares
+
+Even if you already have 4 firmwares (ICSMeter, ICMultiMeter ICKeyer and DXTracker) after flashing your M5Stack via M5Burner, you can add other firmwares to the root of the micro SD card. 
+
+> **Important ! Important ! Important !** Because applications now use LittleFS and not SPIFFS, if you have old firmwares based on SPIFFS, consider replacing it with the latest versions using LittleFS. If you don't, after loading an old firmware using SPIFFS, it will reformat your flash memory and overwrite any firmware you already have. So, be aware.
 
 # Installation
 
@@ -244,7 +240,7 @@ Restart your M5Stack, copy the log trace that appears in the console and send it
 
 ## Backup full image : *read_flash*
 
-Using ``esptool``, enter this command :
+Using ``esptool``, enter this command:
 
 ``esptool.py --port /dev/tty.usbserial-02041F5C --baud 230400 read_flash 0x00000 0x1000000 flash_16M.bin``
 
@@ -252,11 +248,19 @@ Replace port and baud rate by yours.
 
 ## Restore full image : *write_flash*
 
-Using ``esptool``, enter this command :
+Using ``esptool``, enter this command:
 
 ``esptool.py --port /dev/tty.usbserial-02041F5C --baud 921600 write_flash --flash_freq keep 0x000000 flash_16M.bin``
 
 Replace port and baud rate by yours.
+
+## GZipped a firmware
+
+Using ``gzip``, enter this command:
+
+``gzip -c firmware.bin > firmware.gz``
+
+That's all. The size is reduced by about 30%.
 
 # Disclaimers 
 
