@@ -200,6 +200,12 @@ longitude = 2.2708201
 
 Ready to go? Your M5Stack has been flashed with M5Burner? Your micro SD card has been formatted and you have saved your modified `.ini` files with your settings? Good. So let's go.
 
+> Important. On M5Core2, the 3 small red circles on the front bottom of the screen are capacitive buttons. Each of these buttons correspond to the left, middle and right physical buttons of the M5Core.
+
+|![Buttons](https://github.com/armel/M5HamRadio/blob/main/img/Buttons.png)|
+|:--:|
+| Capacitive buttons on M5Core2 |
+
 ## Bin Loader
 
 By default, M5Stack will start on ICSMeter firmware. At startup, you'll see the Bin Loader with a green gauge. You have 3 seconds to use the bottom middle button to select another firmware. Pressing the left or right button will bypass this step. 
