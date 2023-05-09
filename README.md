@@ -218,6 +218,10 @@ If the micro SD card is correctly inserted in your M5Stack, you'll now see the I
 
 > So, if you change something in your .ini file (for example, the Wifi password, etc.), **you must restart your M5Stack and select it again from the Ini Loader to force reload this new version**. A new copy will then be made in the M5Stack Flash memory. And it will be this new version that will be read at the next reboot (if no action / selection with the Ini Loader).
 
+# About micro SD card issues
+
+Regarding the micro SD card, if you are experiencing issues, please ensure that it is properly inserted into your M5Stack. Remember to format it as FAT32. If necessary, clean the contacts on the micro SD card with the purest possible alcohol (in order of purity: 99.9% isopropyl alcohol, 90% alcohol, 70% alcohol). Be sure to wait until the micro SD card is completely dry before reinserting it into your M5Stack. Last but not least try another one micro SD Card, if necessary. From experience, the quality of micro SD cards can vary from one brand to another.
+
 # Help me to debug your problem
 
 Do you have a problem? Okay, don't panic. 
