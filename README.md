@@ -199,6 +199,7 @@ longitude = 2.2708201
 ```
 
 > About Geolocation Config, you need to use decimal coordinates (with a dot as decimal separator). Here are some examples :
+>
 > Paris (France)
 > latitude = 48.866667
 > longitude : 2.333333
