@@ -94,7 +94,7 @@ Set > Connectors > CI-V > CI-V USB Echo Back  OFF
 
 Using a plain text editor, you will create a file that should have the `.ini` extension. 
 
-> I insist, you must use a simple plain text editor. Do not save your `.ini` file in DOC or RTF format. Last, but not least, not that the `.ini` file contend is case-sensitive. 
+> I insist, you must use a simple plain text editor. Do not save your `.ini` file in DOC or RTF format. Last, but not least, note that the `.ini` file contend is case-sensitive. 
 
 For example `IC705BT.ini` if you plan to use an IC-705, connected by Bluetooth. 
 
