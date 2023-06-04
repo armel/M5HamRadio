@@ -200,18 +200,15 @@ longitude = 2.2708201
 
 > About Geolocation Config, you need to use decimal coordinates (with a dot as decimal separator). Here are some examples :
 >
-> Paris (France)
->
+> Paris (France)\
 > latitude = 48.866667\
 > longitude = 2.333333
 >
-> Syndney (Australia)
->
+> Syndney (Australia)\
 > latitude = -33.865143\
 > longitude = 151.209900
 >
-> Los Angeles (USA)
->
+> Los Angeles (USA)\
 > latitude = 34.003342\
 > longitude = -118.485832
 
