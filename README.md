@@ -201,15 +201,21 @@ longitude = 2.2708201
 > About Geolocation Config, you need to use decimal coordinates (with a dot as decimal separator). Here are some examples :
 >
 > Paris (France)
+>
 > latitude = 48.866667
-> longitude : 2.333333
+>
+> longitude = 2.333333
 >
 > Syndney (Australia)
+>
 > latitude = -33.865143
+>
 > longitude = 151.209900
 >
 > Los Angeles (USA)
+>
 > latitude = 34.003342
+>
 > longitude = -118.485832
 
 > If these two sections Wifi Config and Geolocation Config are correctly settings in one of your others `.ini` files for ICSMeter, ICMultiMeter or ICKeyer, this will work too.
