@@ -92,7 +92,11 @@ Set > Connectors > CI-V > CI-V USB Echo Back  OFF
 
 ## ICSMeter, ICMultiMeter and ICKeyer .ini file settings
 
-Using a plain text editor, you will create a file that should have the `.ini` extension. For example `IC705BT.ini` if you plain to use an IC-705, connected by Bluetooth. 
+Using a plain text editor, you will create a file that should have the `.ini` extension. 
+
+> I insist, you must use a simple plain text editor. Do not save your `.ini` file in DOC or RTF format. Last, but not least, not that the `.ini` file contend is case-sensitive. 
+
+For example `IC705BT.ini` if you plan to use an IC-705, connected by Bluetooth. 
 
 And now, here is what you will put in this `IC705BT.ini`. Of course, **take the time to adapt the values to your use** :
 
@@ -133,7 +137,7 @@ longitude = 2.2708201
 
 
 > Note that, Proxy Config section is ONLY useful if you linked your M5Stack to your Transceiver via USB using ICUSBProxy. If you are using Bluetooth, you do not need to change this section of settings. So leave values as they are, by default. The same goes for the Geolocation Config section which is ONLY useful for DXTracker. But if you fill in this section (and the Wifi Config section) correctly, this `.ini` file will also work for the DXTracker too.
- 
+
 Please, again, **take the time to adapt the values to your use**. It's important !
 
 Here is an another example, if you're using an IC-7300, with this `IC7300USB.ini` :
@@ -193,6 +197,19 @@ latitude = 48.848285
 longitude = 2.2708201
 
 ```
+
+> About Geolocation Config, you need to use decimal coordinates (with a dot as decimal separator). Here are some examples :
+> Paris (France)
+> latitude = 48.866667
+> longitude : 2.333333
+>
+> Syndney (Australia)
+> latitude = -33.865143
+> longitude = 151.209900
+>
+> Los Angeles (USA)
+> latitude = 34.003342
+> longitude = -118.485832
 
 > If these two sections Wifi Config and Geolocation Config are correctly settings in one of your others `.ini` files for ICSMeter, ICMultiMeter or ICKeyer, this will work too.
 
