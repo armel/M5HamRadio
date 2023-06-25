@@ -80,7 +80,7 @@ Click on the blue Download button. Then click on the red Burn button.
 |:--:|
 | M5Burner |
 
-## About TX settings (for USB usage via ICUSBProxy)
+## About TX settings (for USB usage via [ICUSBProxy](https://github.com/armel/ICUSBProxy))
 
 Here is a part of my transceiver settings, on IC-7300 :
 
@@ -96,7 +96,7 @@ Using a plain text editor, you will create a file that should have the `.ini` ex
 
 > I insist, you must use a simple plain text editor. Do not save your `.ini` file in DOC or RTF format. Last, but not least, note that the `.ini` file contend is case-sensitive. 
 
-For example `IC705BT.ini` if you plan to use an IC-705, connected by Bluetooth. 
+Name it, for example `IC705BT.ini` if you plan to use an IC-705, connected by Bluetooth. 
 
 And now, here is what you will put in this `IC705BT.ini`. Of course, **take the time to adapt the values to your use** :
 
@@ -133,20 +133,59 @@ latitude = 48.848285
 longitude = 2.2708201
 ```
 
-> About Icom Config section, here are some explanations. About `icom_model` choose between 705, 7300 or 9700. About `icom_address`, this is your Icom CI-V Address. About `icom_connect` choose between BT or USB (if you choose USB, you will need ICUSBProxy). Last, about `icom_device`, this is the BT Address of your 705 (from your transceiver, enter Menu and go to Set > Bluetooth Set > Bluetooth Device Information).
+> About Icom Config section, here are some explanations. About `icom_model` choose between 705, 7300 or 9700. About `icom_address`, this is your Icom CI-V Address. About `icom_connect` choose between BT or USB (if you choose USB, you will need [ICUSBProxy](https://github.com/armel/ICUSBProxy)). Last, about `icom_device`, 
+
+> * If you're using an IC-705, this is the BT Address of your 705. From your transceiver, enter Menu and go to Set > Bluetooth Set > Bluetooth Device Information. Mine is `30:31:7D:33:B2:58`.
+> 
+> * If you're using an IC-7300 or a IC-9700 with a [CAT to Bluetooth Adapter Converter](https://www.aliexpress.com/item/1005003015867623.html), this is the Adapter Bluetooth name. Use your Smartphone or your PC to find it by proximity detection. Mine is `FBT06`.
 
 
-> Note that, Proxy Config section is ONLY useful if you linked your M5Stack to your Transceiver via USB using ICUSBProxy. If you are using Bluetooth, you do not need to change this section of settings. So leave values as they are, by default. The same goes for the Geolocation Config section which is ONLY useful for DXTracker. But if you fill in this section (and the Wifi Config section) correctly, this `.ini` file will also work for the DXTracker too.
+> Note that, Proxy Config section is ONLY useful if you linked your M5Stack to your Transceiver via USB using [ICUSBProxy](https://github.com/armel/ICUSBProxy). If you are using Bluetooth, you do not need to change this section of settings. So leave values as they are, by default. The same goes for the Geolocation Config section which is ONLY useful for DXTracker. But if you fill in this section (and the Wifi Config section) correctly, this `.ini` file will also work for the DXTracker too.
 
 Please, again, **take the time to adapt the values to your use**. It's important !
 
-Here is an another example, if you're using an IC-7300, with this `IC7300USB.ini` :
+Here is an another example, if you plan to use an IC-7300, connected by Bluetooth (need to use a [CAT to Bluetooth Adapter Converter](https://www.aliexpress.com/item/1005003015867623.html)) with this `IC7300BT.ini` :
 
 ```
 ; Icom Config
 [icom]
 icom_model = 7300
 icom_address = 0x94
+icom_connect = BT
+icom_device = FBT06
+
+; Wifi Config
+[wifi]
+wifi_ssid = F1ZPX
+wifi_password = petitchaton
+
+; Proxy Config
+[proxy]
+baud_rate = 115200
+proxy_url = http://192.168.1.32
+proxy_port = 1234
+
+; Transverter Config
+[transverter]
+transverter_lo_1 = 116000000
+transverter_lo_2 = 118000000
+transverter_lo_3 = 404000000
+transverter_lo_4 = 406000000
+transverter_lo_5 = 9968000000
+
+; Geolocation Config
+[geolocation]
+latitude = 48.848285
+longitude = 2.2708201
+```
+
+Finaly here is an another example, if you're using an IC-9700, connected by USB (need to use [ICUSBProxy](https://github.com/armel/ICUSBProxy)) with this `IC9700USB.ini` :
+
+```
+; Icom Config
+[icom]
+icom_model = 9700
+icom_address = 0xA2
 icom_connect = USB
 icom_device = /dev/ttyUSB0
 
@@ -177,7 +216,7 @@ longitude = 2.2708201
 
 Last, you will need to copy these files at the root of the micro SD card. That's all.
 
-> You are able to put multiple .ini settings files for all your transceivers. I have got 3 of them for my IC-705 in BT mode, my IC-705 in USB mode and my IC-7300 in USB mode. I put them in this repository in the `ini` folder. 
+> You are able to put multiple .ini settings files for all your transceivers. I have got 4 of them for my IC-705 and my IC-7300 in BT mode or USB mode. I put them in this repository in the `ini` folder. 
 
 ## DXTracker .ini file settings
 
