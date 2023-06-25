@@ -135,7 +135,7 @@ longitude = 2.2708201
 
 > About Icom Config section, here are some explanations. About `icom_model` choose between 705, 7300 or 9700. About `icom_address`, this is your Icom CI-V Address. About `icom_connect` choose between BT or USB (if you choose USB, you will need [ICUSBProxy](https://github.com/armel/ICUSBProxy)). Last, about `icom_device`, 
 
-> * If you're using an IC-705, this is the BT Address of your 705. From your transceiver, enter Menu and go to Set > Bluetooth Set > Bluetooth Device Information. Mine is `30:31:7D:33:B2:58`.
+> * If you're using an IC-705, this is the BT Address of your IC-705. From your transceiver, enter Menu and go to Set > Bluetooth Set > Bluetooth Device Information. Mine is `30:31:7D:33:B2:58`.
 > 
 > * If you're using an IC-7300 or a IC-9700 with a [CI-V to Bluetooth Adapter Converter](https://www.aliexpress.com/item/1005003015867623.html), this is the Adapter Bluetooth name. Use your Smartphone or your PC to find it by proximity detection. Mine is `FBT06`.
 
