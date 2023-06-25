@@ -137,14 +137,14 @@ longitude = 2.2708201
 
 > * If you're using an IC-705, this is the BT Address of your 705. From your transceiver, enter Menu and go to Set > Bluetooth Set > Bluetooth Device Information. Mine is `30:31:7D:33:B2:58`.
 > 
-> * If you're using an IC-7300 or a IC-9700 with a [CAT to Bluetooth Adapter Converter](https://www.aliexpress.com/item/1005003015867623.html), this is the Adapter Bluetooth name. Use your Smartphone or your PC to find it by proximity detection. Mine is `FBT06`.
+> * If you're using an IC-7300 or a IC-9700 with a [CI-V to Bluetooth Adapter Converter](https://www.aliexpress.com/item/1005003015867623.html), this is the Adapter Bluetooth name. Use your Smartphone or your PC to find it by proximity detection. Mine is `FBT06`.
 
 
 > Note that, Proxy Config section is ONLY useful if you linked your M5Stack to your Transceiver via USB using [ICUSBProxy](https://github.com/armel/ICUSBProxy). If you are using Bluetooth, you do not need to change this section of settings. So leave values as they are, by default. The same goes for the Geolocation Config section which is ONLY useful for DXTracker. But if you fill in this section (and the Wifi Config section) correctly, this `.ini` file will also work for the DXTracker too.
 
 Please, again, **take the time to adapt the values to your use**. It's important !
 
-Here is an another example, if you plan to use an IC-7300, connected by Bluetooth (need to use a [CAT to Bluetooth Adapter Converter](https://www.aliexpress.com/item/1005003015867623.html)) with this `IC7300BT.ini` :
+Here is an another example, if you plan to use an IC-7300, connected by Bluetooth (need to use a [CI-V to Bluetooth Adapter Converter](https://www.aliexpress.com/item/1005003015867623.html)) with this `IC7300BT.ini` :
 
 ```
 ; Icom Config
