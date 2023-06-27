@@ -4,6 +4,7 @@
 ![fire](https://img.shields.io/badge/M5Stack-FIRE-orange)
 ![core2](https://img.shields.io/badge/M5Stack-CORE2-green)
 ![aws](https://img.shields.io/badge/M5Stack-AWS-orange)
+![coreS3](https://img.shields.io/badge/M5Stack-CORES3-lightgrey)
 
 **First of all, many thanks to all my [donors](#donations)🙏🏻** 
 
@@ -43,6 +44,11 @@ Even if you already have 4 firmwares (ICSMeter, ICMultiMeter ICKeyer and DXTrack
 
 # Installation
 
+## Warning about M5Stack CoreS3 support
+
+Support for the M5Stack Core S3 is still experimental. By the way, the M5Stack Core S3 only supports Bluetooth 5.0 (BLE - Bluetooth Low Energy), but not anymore Bluetooth 4.2 (Classic).
+Therefore, classical Bluetooth serial connexion won't work on the M5Stack Core S3. So, you will need to use [ICUSBProxy](https://github.com/armel/ICUSBProxy). **So, if you plan to use the Bluetooth connection, get an M5Stack Core or Core2 instead !**
+
 ## Prerequisites
 
 You need an M5Stack (with 16MB Flash Memory), a micro SD card and a PC under Windows, Linux or MacOS, with the USB drivers installed and the M5Burner application version 3.0.0 (or higher).
@@ -72,7 +78,7 @@ Please go to [download page](https://docs.m5stack.com/en/download) to download t
 
 Connect your M5Stack to your PC.
 
-Launch the M5Burner application and select the M5HamRadio firmware for your M5Stack model. Be aware, there is a version for M5Core (Basic, Grey, Fire, etc.) with buttons and a version for M5Core2 (Core2, AWS, etc.) with touch screen. 
+Launch the M5Burner application and select the M5HamRadio firmware for your M5Stack model. Be aware, there is a version for M5Stack Core (Basic, Grey, Fire, etc.) with buttons, a version for M5Stack Core2 (Core2, AWS, etc.) with touch screen and an **experimental** version for M5Stack CoreS3. 
 
 Click on the blue Download button. Then click on the red Burn button.
 
@@ -257,11 +263,17 @@ longitude = 2.2708201
 
 Ready to go? Your M5Stack has been flashed with M5Burner? Your micro SD card has been formatted and you have saved your modified `.ini` files with your settings? Good. So let's go.
 
-> Important. On M5Core2, the 3 small red circles on the front bottom of the screen are capacitive buttons. Each of these buttons correspond to the left, middle and right physical buttons of the M5Core.
+> Important. On M5Stack Core2, the 3 small red circles on the front bottom of the screen are capacitive buttons. Each of these buttons correspond to the left, middle and right physical buttons of the M5Stack Core.
 
-|![Buttons](https://github.com/armel/M5HamRadio/blob/main/img/Buttons.png)|
+|![Buttons](https://github.com/armel/M5HamRadio/blob/main/img/ButtonsCore2.png)|
 |:--:|
-| Capacitive buttons on M5Core2 |
+| Capacitive buttons on M5Stack Core2 |
+
+> Important. On M5Stack CoreS3, the front bottom of the screen is **not anymore** capacitive. So you need to touch the bottom left, bottom center and bottom right of the M5Stack CoreS3 screen (directly on the display area) to emulate the left, middle and right physical buttons of the M5Stack Core.
+
+|![Buttons](https://github.com/armel/M5HamRadio/blob/main/img/ButtonsCoreS3.png)|
+|:--:|
+| Capacitive buttons on M5Stack CoreS3 |
 
 ## Bin Loader
 
@@ -278,6 +290,10 @@ If the micro SD card is correctly inserted in your M5Stack, you'll now see the I
 # About micro SD card issues
 
 Regarding the micro SD card, if you are experiencing issues, please ensure that it is properly inserted into your M5Stack. Remember to format it as FAT32. If necessary, clean the contacts on the micro SD card with the purest possible alcohol (in order of purity: 99.9% isopropyl alcohol, 90% alcohol, 70% alcohol). Be sure to wait until the micro SD card is completely dry before reinserting it into your M5Stack. Last but not least try another one micro SD Card, if necessary. From experience, the quality of micro SD cards can vary from one brand to another.
+
+# Improvements
+
+Remember that all applications in the M5HamRadio project are full compatible with the [M5Stack Display module 13.2](https://shop.m5stack.com/collections/m5-modules/products/display-module-13-2?ref=LUxetaH4) ! So it's possible to display the screen output, via an HDMI cable, on a large PC screen or TV.
 
 # Help me to debug your problem
 
