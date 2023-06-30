@@ -86,15 +86,34 @@ Click on the blue Download button. Then click on the red Burn button.
 |:--:|
 | M5Burner |
 
-## About TX settings (for USB usage via [ICUSBProxy](https://github.com/armel/ICUSBProxy))
+## About special TX settings
 
-Here is a part of my transceiver settings, on IC-7300 :
+### Bluetooth usage via [CI-V to Bluetooth Adapter Converter](https://www.aliexpress.com/item/1005003015867623.html)
+
+First of all, plug in DIN cable (for Bluetooth adapter power supply) and Jack cable (for CI-V commands). Finally, check this settings on your IC-7300 or IC-9700 :
+
 
 ```
-Set > Connectors > CI-V > CI-V USB Port       Unlink from [REMOTE]
-Set > Connectors > CI-V > CI-V USB Baud Rate  115200
-Set > Connectors > CI-V > CI-V USB Echo Back  OFF
+Menu > Set > Connectors > CI-V > CI-V Baude Rate > 9600
+Menu > Set > Connectors > CI-V > CI-V Transceive > OFF
 ```
+
+### USB usage via [ICUSBProxy](https://github.com/armel/ICUSBProxy))
+
+Please, check this settings on your IC-7300 or IC-9700 :
+
+```
+Menu > Set > Connectors > CI-V > CI-V USB Port       Unlink from [REMOTE]
+Menu > Set > Connectors > CI-V > CI-V USB Baud Rate  115200
+Menu > Set > Connectors > CI-V > CI-V USB Echo Back  OFF
+```
+
+Please, check this settings on your IC-705 :
+
+```
+Menu > Set > Connectors > CI-V > CI-V USB Echo Back  OFF
+```
+
 
 ## ICSMeter, ICMultiMeter and ICKeyer .ini file settings
 
