@@ -98,6 +98,8 @@ Menu > Set > Connectors > CI-V > CI-V Baude Rate > 9600
 Menu > Set > Connectors > CI-V > CI-V Transceive > OFF
 ```
 
+> Please note that the DIN output of the IC-9700 (8-pin) is not the same as the DIN output of the IC-7300 (13-pin) ! The Bluetooth adapter I pointed on AliExpress and am using all day is **ready for use on the IC-7300**. But you'll need to adapt the pinout to use it on the IC-9700. So please, consult your manual. 
+
 ### USB usage via [ICUSBProxy](https://github.com/armel/ICUSBProxy))
 
 Please, check this settings on your IC-7300 or IC-9700 :
