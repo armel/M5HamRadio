@@ -241,6 +241,8 @@ latitude = 48.848285
 longitude = 2.2708201
 ```
 
+> Note that, if you're under Windows, `icom_device` is something like `COM3`, not something like `/dev/ttyUSB0` (Unix only).
+
 Last, you will need to copy these files at the root of the micro SD card. That's all.
 
 > You are able to put multiple .ini settings files for all your transceivers. I have got 4 of them for my IC-705 and my IC-7300 in BT mode or USB mode. I put them in this repository in the `ini` folder. 
@@ -346,7 +348,7 @@ Restart your M5Stack, copy the log trace that appears in the console and send it
 
 Using ``esptool``, enter this command:
 
-``esptool.py --port /dev/tty.usbserial-02041F5C --baud 230400 read_flash 0x00000 0x1000000 flash_16M.bin``
+``esptool.py --port /dev/tty.usbserial-02041F5C --baud 230400 read_flash 0x00000 ALL M5HamRadio.bin``
 
 Replace port and baud rate by yours.
 
@@ -354,7 +356,7 @@ Replace port and baud rate by yours.
 
 Using ``esptool``, enter this command:
 
-``esptool.py --port /dev/tty.usbserial-02041F5C --baud 921600 write_flash --flash_freq keep 0x000000 flash_16M.bin``
+``esptool.py --port /dev/tty.usbserial-02041F5C --baud 921600 write_flash --flash_freq keep 0x000000 M5HamRadio.bin``
 
 Replace port and baud rate by yours.
 
