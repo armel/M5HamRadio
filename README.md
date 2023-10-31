@@ -183,8 +183,8 @@ icom_device = FBT06
 
 ; Wifi Config
 [wifi]
-wifi_ssid = F1ZPX
-wifi_password = petitchaton
+wifi_ssid = YOUR_SSID
+wifi_password = YOUR_PASSWORD
 
 ; Proxy Config
 [proxy]
